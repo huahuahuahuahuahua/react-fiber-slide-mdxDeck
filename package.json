@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "text": "mdx-deck deck.mdx",
+    "test": "mdx-deck deck.mdx",
+    "build": "mdx-deck build deck.mdx"
+  },
+  "devDependencies": {
+    "code-surfer": "^3.1.1",
+    "mdx-deck": "3.0.13"
+  },
+  "name": "my-deck"
+}
