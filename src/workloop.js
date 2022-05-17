@@ -3,7 +3,7 @@ function workLoop(deadline) {
   let shouldYield = false;
   //每次循环都会调用shouldYield判断当前是否有剩余时间。
   while (nextUnitOfWork && !shouldYield) {
-    //触发对 beginWork 的调用，进而实现对新 Fiber 节点的创建
+    //performUnitOfWork 是DFS（Depth-first search）遍历过程
     nextUnitOfWork = performUnitOfWork(nextUnitOfWork);
     shouldYield = deadline.timeRemaining() < 1;
   }

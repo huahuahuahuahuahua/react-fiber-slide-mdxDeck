@@ -24,7 +24,7 @@ export type ReactElement = {
 }
 ```
 
-
+![image-20220517224042367](C:\Users\10177\AppData\Roaming\Typora\typora-user-images\image-20220517224042367.png)
 
 ![image-20220515002512683](C:\Users\10177\AppData\Roaming\Typora\typora-user-images\image-20220515002512683.png)
 
@@ -179,6 +179,32 @@ type Fiber = {
 如果 JavaScript 线程长时间地占用了主线程，那么渲染层面的更新就不得不长时间地等待,界面长时间不更新，会导致页面响应度变差，
 
 ## how fiber work
+
+
+
+
+
+```shell
+// 调度器
+function scheduleCallback(task) {}
+//请求空闲时间进行工作循环
+requestIdleCallback(workLoop);
+//根据优先级处理任务
+function workLoop(deadline) {}
+//构建 Fiber 树中每个 Fiber 的方法
+function performUnitOfWork(fiber) {}
+//更新视图
+function commitRoot() {}
+
+```
+
+
+
+
+
+
+
+
 
 ### Scheduler 调度器 
 

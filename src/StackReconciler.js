@@ -1,6 +1,8 @@
 class InternalComponent {
+  // 接受一个组件
   receiveComponent(nextElement) {
     var prevElement = this._currentElement;
+    // 调用函数更新组件
     this.updateComponent(prevElement, nextElement);
   }
   updateComponent(prevParentElement, nextParentElement) {
