@@ -36,14 +36,20 @@ export const theme = vsDark;
 <Split>
 <>
   15 Stack reconciler
-  <img src={SmothReconciler} />
+  <img 
+  style={{ width: "500px" }}
+  src={SmothReconciler} />
 </>
 <>
   16 Fiber reconciler
-  <img src={SmothReconciler} />
+  <img 
+  style={{ width: "500px" }}
+  src={SmothReconciler} />
 </>
 
 </Split>
+
+###### 两边都很流畅
 
 ---
 
@@ -335,7 +341,7 @@ export const theme = vsDark;
 
 <Step>
 
-```js file=./src/schedule.js title="Fiber 更新流程（伪代码）" subtitle="增加了任务优先级、时间片"
+```js file=./src/schedule.js title="Fiber 更新流程（伪代码）" subtitle="增加了任务优先级、时间片、任务中断"
 
 ```
 
@@ -370,7 +376,7 @@ export const theme = vsDark;
 
 <CodeSurfer>
 
-```js file=./src/allWork.js title="Fiber 更新流程"
+```js file=./src/allWork.js title="Fiber 更新流程" subtitle="请问大家有什么问题吗？（虽然我可能回答不了）"
 
 ```
 
@@ -380,15 +386,15 @@ export const theme = vsDark;
 
 <!-- 注释：docs 列表 -->
 
-docs:[codesurfer.pomb.us](https://codesurfer.pomb.us)
+docs：[codesurfer.pomb.us](https://codesurfer.pomb.us)
 
-ppt 所用工具:[mdx-deck-slide-decks](https://github.com/huahuahuahuahuahua/mdx-deck-slide-decks)
+部署网页 page：[huawink.fun](http://huawink.fun/)
 
-部署网页 page:[huawink.fun](http://huawink.fun/)
-
-参考文档:[build-your-own-react](https://pomb.us/build-your-own-react/)
+参考文档：[build-your-own-react](https://pomb.us/build-your-own-react/)
 
 源代码：[react-fiber-slide-mdxDeck](https://github.com/huahuahuahuahuahua/react-fiber-slide-mdxDeck.git)
+
+ppt 所用工具：[mdx-deck-slide-decks](https://github.com/huahuahuahuahuahua/mdx-deck-slide-decks)
 
 ---
 
