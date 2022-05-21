@@ -3,8 +3,6 @@
   "version": "0.0.1",
   "scripts": {
     "start": "mdx-deck deck.mdx",
-    "text": "mdx-deck deck.mdx",
-    "test": "mdx-deck deck.mdx",
     "build": "mdx-deck build deck.mdx"
   },
   "devDependencies": {
